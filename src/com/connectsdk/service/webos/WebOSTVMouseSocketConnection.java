@@ -23,6 +23,12 @@ package com.connectsdk.service.webos;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+import java.security.KeyException;
+import java.security.NoSuchAlgorithmException;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.SSLContext;
+import import org.java_websocket.client.DefaultSSLWebSocketClientFactory;
+
 import org.java_websocket.WebSocket.READYSTATE;
 import org.java_websocket.client.WebSocketClient;
 import org.java_websocket.handshake.ServerHandshake;
